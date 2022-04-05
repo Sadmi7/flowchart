@@ -1,4 +1,16 @@
 # Getting Started with Meteor Create
+Download the project 
+
+```
+https://github.com/Sadmi7/flowchart.git
+```
+
+# Install modules and dependencies in root folder
+
+```
+meteor npm install
+```
+
 # Available Scripts
 In the project directory, you can run:
 ### `meteor`
