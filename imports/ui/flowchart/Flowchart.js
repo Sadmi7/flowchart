@@ -153,7 +153,6 @@ function Flow() {
             const label = event.dataTransfer.getData("application/reactflow/label");
             const func = event.dataTransfer.getData("application/reactflow/func");
 
-            // check if the dropped element is valid
             if (!varA) {
                 alert("Field A cannot be empty!");
                 return;
@@ -192,8 +191,6 @@ function Flow() {
                 item.varA = varA;
                 item.varB = varB;
 
-                console.log("item.data.label", item.data.label);
-
                 if (item?.data?.label !== "Result") {
                     item.data = {
                         label: eval(`${varA}${item?.function}${varB}`),
@@ -208,8 +205,6 @@ function Flow() {
 
             setUpdatedNodes(originalNodes);
         }
-
-        console.log("filteredNodes", outputNodes);
     }, [varA, varB]);
 
     return (
