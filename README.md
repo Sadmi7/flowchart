@@ -8,7 +8,7 @@ https://github.com/Sadmi7/flowchart.git
 # Install modules and dependencies in root folder
 
 ```
-meteor npm install
+npm install
 ```
 
 # Available Scripts
